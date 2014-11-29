@@ -33,6 +33,7 @@ clf = classify(features_train, labels_train)
 
     ############# your code goes below this line  ###############
 
+labels_test = clf.predict (features_test)
 
 
 
