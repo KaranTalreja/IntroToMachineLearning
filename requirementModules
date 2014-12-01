@@ -61,7 +61,7 @@ pytz==2011k
 pyxdg==0.19
 reportlab==2.5
 rhythmbox-ubuntuone==4.2.0
-scikit-learn==0.10
+scikit-learn==0.15.2
 scipy==0.9.0
 sessioninstaller==0.0.0
 simplejson==2.3.2
