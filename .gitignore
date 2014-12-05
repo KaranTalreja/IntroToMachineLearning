@@ -2,4 +2,5 @@
 *.swp
 *.swo
 .project
+*.png
 .pydevproject
