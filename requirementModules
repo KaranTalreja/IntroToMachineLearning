@@ -33,6 +33,7 @@ lazr.uri==1.0.3
 lockfile==0.8
 louis==2.3.0
 matplotlib==1.1.1rc
+nltk==3.0.0
 nose==1.1.2
 numpy==1.6.1
 nvidia-common==0.0.0
