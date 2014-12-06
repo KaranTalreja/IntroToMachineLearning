@@ -1,5 +1,4 @@
 import sys
-sys.path.append("../GaussianDeployment/")
 from class_vis import prettyPicture
 from prep_terrain_data import makeTerrainData
 
@@ -19,15 +18,17 @@ features_train, labels_train, features_test, labels_test = makeTerrainData()
 
 
 #### your code goes here
+from classifyDT import classify
 from sklearn.metrics.metrics import accuracy_score
-from sklearn import tree
-clf = tree.DecisionTreeClassifier()
+clf = classify(features_train, labels_train,50.0)
 
 clf.fit(features_train,labels_train)
 pred = clf.predict_proba(features_test)
-
-
-acc = accuracy_score(labels_test,pred[:,1])### you fill this in!
+roundedNumber = []
+for i in range(0,len(pred)):
+    roundedNumber.append(round(pred[i,1]))
+acc = accuracy_score(labels_test,roundedNumber)### you fill this in!
+print acc### be sure to compute the accuracy on the test set
 
 
     
