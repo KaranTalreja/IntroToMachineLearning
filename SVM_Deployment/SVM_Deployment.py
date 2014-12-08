@@ -34,9 +34,9 @@ print "Accuracy: ",acc
 
     ### draw the decision boundary with the text points overlaid
 
-from class_vis import prettyPicture, output_image
-prettyPicture(clf, features_test, labels_test)
-output_image("test.png", "png", open("test.png", "rb").read())
+#from class_vis import prettyPicture, output_image
+# prettyPicture(clf, features_test, labels_test)
+# output_image("test.png", "png", open("test.png", "rb").read())
 
 def submitAccuracy():
     return acc

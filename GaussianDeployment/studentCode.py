@@ -14,4 +14,4 @@ def submitAccuracy():
     return accuracy
 
 if __name__ == "__main__" :
-    print NBAccuracy(features_train, labels_train, features_test, labels_test)
+    print "NBGaussian accuracy:",NBAccuracy(features_train, labels_train, features_test, labels_test)
